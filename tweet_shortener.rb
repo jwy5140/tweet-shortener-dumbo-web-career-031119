@@ -35,6 +35,9 @@ def bulk_tweet_shortener(arr)
   end
 end
 
-def selective_tweet_shortener(arr)
-  binding.pry
+def selective_tweet_shortener(str)
+  if str.length > 140
+    word_substituter(str)
+  end
+  str
 end
